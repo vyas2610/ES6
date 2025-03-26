@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find & Find Index</title>
+</head>
+<body>
+    <h1>Find & Find Index</h1>
+
+    <script>
+        let a =[10,11,12,45,56,45,23];
+
+        let result = a.find(function(item){
+          return  item>10 && item>12; 
+        })
+
+        let findIndex1 = a.findIndex(function(item){
+            return item >10;
+        })
+
+        console.warn(result);
+        console.warn(findIndex1);
+    </script>
+</body>
+</html>
